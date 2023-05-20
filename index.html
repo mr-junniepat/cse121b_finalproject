@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Drawing App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto flex h-screen">
+        <canvas id="drawingBoard" class="flex-grow m-8 border-black border-4"></canvas>
+        <div class="m-8 w-64">
+            <input id="colorPicker" class="w-full py-2 px-4 border rounded mt-4" type="color" value="#000000">
+            <button id="rectangle" class="w-full py-2 px-4 border rounded bg-blue-500 text-white mt-4">Draw
+                Rectangle</button>
+            <button id="circle" class="w-full py-2 px-4 border rounded bg-blue-500 text-white mt-4">Draw Circle</button>
+            <button id="oval" class="w-full py-2 px-4 border rounded bg-blue-500 text-white mt-4">Draw Oval</button>
+            <input id="inputText" class="w-full py-2 px-4 border rounded mt-4" type="text" placeholder="Type text here">
+            <button id="addText" class="w-full py-2 px-4 border rounded bg-blue-500 text-white mt-4">Add Text</button>
+            <button id="clear" class="w-full py-2 px-4 border rounded bg-red-500 text-white mt-4">Clear Canvas</button>
+            <button id="save" class="w-full py-2 px-4 border rounded bg-green-500 text-white mt-4">Save Drawing</button>
+            <button id="load" class="w-full py-2 px-4 border rounded bg-yellow-500 text-white mt-4">Load
+                Drawing</button>
+        </div>
+    </div>
+    <script type="module" src="drawingApp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+</body>
+
+</html>
